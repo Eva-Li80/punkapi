@@ -45,46 +45,79 @@
     margin: 75px;
     padding: 50px;
     font-size: 20px;
-    background-color: rgb(96, 93, 88);
+    background: linear-gradient(to right,gray,rgb(175, 168, 169),rgb(165, 163, 163),gray, rgb(195, 181, 183), rgb(202, 201, 201));
     color: whitesmoke;
     border: 2px solid green;
 
     .name{
-        color: rgb(222, 121, 32);
+        color: rgb(24, 70, 12);
+        background-color:#ccffcc;
+        padding: 10px;
+        max-width: 700px;
+        margin-bottom: 40px;
+        border: 5px solid green;
     }
 
     .des{
-        margin: 10px 300px;
+       max-width: 600px;
+       margin: 10px;
         padding: 10px;
-        color: rgb(240, 213, 175);
+        color: green
+    }
+
+    .tag-abv{
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px;
+        border: 5px solid green;
     }
 
     .abv{
+        max-width: 700px;
+        margin: 10px;
         padding: 10px;
-        color: rgb(238, 131, 54);
+        color: green;
     }
 
     .tag{
-        color: rgb(108, 203, 122);
+        color: green;
+        max-width: 700px;
+        margin: 10px;
     }
 
     .tips{
-        margin: 10px 320px;
-        color: rgb(240, 213, 175);
+        max-width: 600px;
+        margin: 10px;
+        margin: 10px ;
+        color: green;
         padding: 10px;
     }
 
     .ing, .food{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
     padding: 20px;
+   
+    width: 500px;
     margin: 10px;
-        color: rgb(210, 253, 217);
-        background-color: rgb(197, 110, 59);
+        color: rgb(8, 81, 20);
+        background-color:rgb(246, 249, 167);
         border: 2px solid green;
 
         li{
             list-style: none;
            
         }
+    }
+
+    .food{
+        background-color: pink;
     }
 
 
@@ -95,6 +128,9 @@
     font-weight: bold;
     cursor: pointer;
     border: 5px solid green;
+  }
+  .btn:hover{
+    color: rgb(249, 92, 119);
   }
 
 }
