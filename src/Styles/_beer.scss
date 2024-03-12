@@ -42,20 +42,44 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 100px 250px;
+    margin: 75px;
     padding: 50px;
     font-size: 20px;
-    background-color: rgb(205, 133, 50);
+    background-color: rgb(96, 93, 88);
+    color: whitesmoke;
+    border: 2px solid green;
+
+    .name{
+        color: rgb(222, 121, 32);
+    }
 
     .des{
         margin: 10px 300px;
+        padding: 10px;
+        color: rgb(240, 213, 175);
     }
+
+    .abv{
+        padding: 10px;
+        color: rgb(238, 131, 54);
+    }
+
+    .tag{
+        color: rgb(108, 203, 122);
+    }
+
     .tips{
-        margin: 10px 300px;
+        margin: 10px 320px;
+        color: rgb(240, 213, 175);
+        padding: 10px;
     }
 
     .ing, .food{
-        margin: 20px 0px 10px 0px;
+    padding: 20px;
+    margin: 10px;
+        color: rgb(210, 253, 217);
+        background-color: rgb(197, 110, 59);
+        border: 2px solid green;
 
         li{
             list-style: none;
@@ -64,6 +88,13 @@
     }
 
 
-
+  .btn{
+    padding: 25px;
+    margin-top: 20px;
+    color:green;
+    font-weight: bold;
+    cursor: pointer;
+    border: 5px solid green;
+  }
 
 }
