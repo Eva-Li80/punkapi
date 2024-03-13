@@ -6,7 +6,7 @@ import { BeerProps } from "./types/beer";
 const url = "https://api.punkapi.com/v2/beers";
 
 const Beer = () => {
-  const [beerName, setBeerName] = useState<BeerProps>([]);
+  const [beers, setBeers] = useState<BeerProps>([]);
   const [details, setDetails] = useState<BeerProps[number] | null>(null);
   
 
@@ -15,8 +15,7 @@ const Beer = () => {
       try {
         const response = await fetch(url);
         const data = await response.json();
-        setBeerName(data);
-        console.log(data);
+        setBeers(data);
       } catch (error) {
         console.log(error);
       }
@@ -46,7 +45,7 @@ const Beer = () => {
             <BeerDetails beer={details} onBackClick={handleBackClick} />
         ) : (
       <ul className="beer">
-        {beerName.map((beer, index) => (
+        {beers.map((beer, index) => (
           <li
             key={index}
             className="beer-container"
